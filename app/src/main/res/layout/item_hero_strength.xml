@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+    android:layout_marginTop="@dimen/mtrl_card_spacing"
+    android:layout_marginRight="@dimen/mtrl_card_spacing"
+    android:layout_marginBottom="@dimen/mtrl_card_spacing"
+    android:minHeight="200dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/background_item_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/imgStrength"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <TextView
+            android:id="@+id/tvHeroStrength"
+            android:paddingLeft="10dp"
+            android:text="Hero Name"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/background_item_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
